@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./entry.ts"
+    "dev": "nodemon ./entry.ts",
+    "redis": "ts-node ./redis.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@casl/ability": "^5.4.3",
+    "http": "^0.0.1-security",
     "ioredis": "^4.28.0",
     "lodash": "^4.17.21",
     "mongodb": "^4.1.2",
