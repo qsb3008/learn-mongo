@@ -7,15 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./entry.ts",
     "redis": "ts-node ./redis.ts",
-    "casl": "ts-node ./casl.ts"
+    "casl": "ts-node ./casl.ts",
+    "cluster": "npx loadtest -n 400 -c 50 http://127.0.0.1:3000/api/slow"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@casl/ability": "^5.4.4",
+    "express": "^4.21.2",
     "http": "^0.0.1-security",
     "ioredis": "^4.28.0",
+    "loadtest": "^8.1.1",
     "lodash": "^4.17.21",
     "mongodb": "^4.1.2",
     "mongoose": "^6.0.10",
