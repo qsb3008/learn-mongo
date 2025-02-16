@@ -6,19 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./entry.ts",
-    "redis": "ts-node ./redis.ts"
+    "redis": "ts-node ./redis.ts",
+    "casl": "ts-node ./casl.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@casl/ability": "^5.4.3",
+    "@casl/ability": "^5.4.4",
     "http": "^0.0.1-security",
     "ioredis": "^4.28.0",
     "lodash": "^4.17.21",
     "mongodb": "^4.1.2",
     "mongoose": "^6.0.10",
     "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },
   "devDependencies": {
